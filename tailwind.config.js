@@ -48,10 +48,6 @@ module.exports = {
     },
     extend: {
       keyframes: {
-        hscroll: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-63.375rem)" },
-        },
         slideout: {
           "0%": { transform: "translateY(0%)" },
           "99%": { opacity: 1 },
@@ -62,7 +58,6 @@ module.exports = {
         },
       },
       animation: {
-        hscroll: "hscroll 7.5s linear infinite",
         slideout: "slideout 0.3s ease-in-out 1.5s forwards",
       },
       borderWidth: {
