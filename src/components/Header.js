@@ -16,43 +16,30 @@ export default function Header({ className, ...other }) {
       className={twMerge(" flex items-center justify-between ", className)}
       {...other}
     >
-      <button onClick={handleClick}>
-        <div className="logo" />
-      </button>
-      <nav className="flex gap-7 lowercase">
+      <nav className="flex gap-7">
         <HeaderLink href="#about" className="hidden md:flex">
           About
-        </HeaderLink>
-        <HeaderLink href="#services" className="hidden md:flex">
-          Services
         </HeaderLink>
         <HeaderLink href="#projects" className="hidden md:flex">
           Featured projects
         </HeaderLink>
-        <HeaderLink
-          href="#contact"
-          icon={
-            <>
-              <Image
-                alt=""
-                src="/svg/arrow-left-down.svg"
-                width="20"
-                height="20"
-                className="group-hover:hidden"
-              />
-              <Image
-                alt=""
-                src="/svg/arrow-left-down-primary.svg"
-                width="20"
-                height="20"
-                className="hidden group-hover:block"
-              />
-            </>
-          }
-        >
-          Contact
+        <HeaderLink href="#approach" className="hidden md:flex">
+          Approach
+        </HeaderLink>
+        <HeaderLink href="#contact" className="hidden md:flex">
+          Services
         </HeaderLink>
       </nav>
+      <a href="mailto:hi@burninglamb.eu" className="flex items-center gap-1 hover:text-primary-500 transition-colors" >
+        <Image
+          alt=""
+          src="/svg/arrow-left-down-primary.svg"
+          width="20"
+          height="20"
+          className="-scale-x-100"
+        />
+        <span className="underline">hi@burninglamb.eu</span>
+      </a>
     </header>
   );
 }

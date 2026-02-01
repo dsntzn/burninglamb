@@ -1,19 +1,22 @@
 import { twMerge } from "tailwind-merge";
 
-export default function HeaderLink({ children, icon, className, href }) {
+export default function HeaderLink({ children, icon, className, href, hasBlob = true }) {
   return (
     <a
       href={href}
       className={twMerge(
-        "leading-0.9 group flex items-center gap-5 font-heading text-sm hover:text-primary-500 md:text-base",
+        "group flex items-center gap-2 transition-transform",
         className,
       )}
     >
-      <span className="grid h-5 w-5 place-items-center rounded-full group-hover:bg-primary-700">
-        <span className="h-3 w-3 rounded-full bg-primary-500"></span>
-      </span>
+      {hasBlob && 
+        <span className="h-3 w-3 rounded-full border border-solid border-primary-500 group-hover:bg-primary-500 transition-colors" />
+      }
       {icon}
-      <span className="mt-1">{children}</span>
+      <span className="grid overflow-hidden h-4">
+        <span className="text-lg leading-0.8 group-hover:-translate-y-[130%] transition-transform duration-200">{children}</span>
+        <span className="text-lg leading-0.8 group-hover:-translate-y-full transition-transform duration-200" aria-hidden>{children}</span>
+      </span>
     </a>
   );
 }
