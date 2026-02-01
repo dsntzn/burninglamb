@@ -17,7 +17,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Intro className="mb-[115px] pt-56 md:mb-40 md:pt-64" />
+      <Intro className="mb-[189px] pt-10" />
       <HorizontalScroll className="pb-5 pt-7 md:mx-0 md:pb-8 md:pt-10" />
       <About className="mb-14 pt-20 md:mb-[125px] md:pt-36" />
       <History className="mb-[20px] md:mb-[185px]" />

@@ -177,64 +177,22 @@ body {
   background-image: url("/svg/icon-lamb-sprite.svg");
   background-size: 476px 26px;
 }
-
 .logo:hover {
   background-image: url("/svg/icon-lamb-sprite-primary.svg");
   animation: logo 1.5s steps(14) infinite;
 }
 
-@keyframes icon-surface {
-  to { background-position: -350px; }
-}
-.icon-surface {
-  display: flex;
-  width: 35px;
-  height: 34px;
-  background-image: url("/svg/icon-surface-sprite.svg");
-  background-size: 350px 34px;
-}
-.icon-surface:hover {
-  animation: icon-surface 1s steps(10) infinite;
+@keyframes logo-scaled {
+  to { background-position: -952px 0; }
 }
 
-@keyframes icon-cube {
-  to { background-position: -320px; }
+.logo-scaled {
+  width: 68px;
+  height: 52px;
+  background-size: 952px 52px;
 }
-.icon-cube {
-  display: flex; 
-  width: 32px;
-  height: 34px;
-  background-image: url("/svg/icon-cube-sprite.svg");
-  background-size: 320px 34px;
-}
-.icon-cube:hover {
-  animation: icon-cube 1s steps(10) infinite;
-}
-@keyframes icon-globe {
-  to { background-position: -320px; }
-}
-.icon-globe {
-  display: flex; 
-  width: 32px;
-  height: 34px;
-  background-image: url("/svg/icon-globe-sprite.svg");
-  background-size: 320px 34px;
-}
-.icon-globe:hover {
-  animation: icon-globe 1s steps(10) infinite;
-}
-@keyframes icon-bezier {
-  to { background-position: -320px; }
-}
-.icon-bezier {
-  display: flex; 
-  width: 32px;
-  height: 34px;
-  background-image: url("/svg/icon-bezier-sprite.svg");
-  background-size: 320px 34px;
-}
-.icon-bezier:hover {
-  animation: icon-bezier 1s steps(10) infinite;
+.logo-scaled:hover {
+  animation: logo-scaled 1.5s steps(14) infinite;
 }
 
 summary::-webkit-details-marker {
