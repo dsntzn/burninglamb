@@ -3,10 +3,9 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slide from "./ProjectSlide";
-import projects from "@/data/projects";
+import Image from "next/image";
 
-export default function ProjectsCarousel() {
+export default function ProjectsCarousel({ slides}) {
   const settings = {
     dots: true,
     arrows: false,
@@ -46,14 +45,28 @@ export default function ProjectsCarousel() {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {projects.map((project, index) => (
-          <Slide
-            key={project.title}
-            index={index}
-            {...project}
-            data-aos="fade-up"
-            data-aos-delay={index * 50}
-          />
+        {slides.map(({ type, name }, index) => (
+          type === "image" && (
+            <div key={index} className="px-2">
+              <div className="md:hidden">
+                <Image
+                  alt=""
+                  src={`/images/projects/mobile/${name}.png`}
+                  width="343"
+                  height="240"
+                  className="w-full"
+                />
+              </div>
+              <div className="hidden md:block">
+                <Image
+                  alt=""
+                  src={`/images/projects/desktop/${name}.png`}
+                  width="1014"
+                  height="1470"
+                />
+              </div>
+            </div>
+          )
         ))}
       </Slider>
     </div>

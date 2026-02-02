@@ -13,7 +13,7 @@ export default function Header({ className, ...other }) {
   }
   return (
     <header
-      className={twMerge(" flex items-center justify-between ", className)}
+      className={twMerge("flex items-center justify-between ", className)}
       {...other}
     >
       <nav className="flex gap-7">

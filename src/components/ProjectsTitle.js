@@ -1,0 +1,13 @@
+import Image from "next/image"
+import { twMerge } from "tailwind-merge"
+
+const ProjectsTitle = ({ className, ...props }) => {
+    return (
+        <div className={twMerge("pointer-events-none flex flex-nowrap items-start gap-4 sticky top-[48.5px] z-[10] pt-4 pb-2", className)} {...props}>
+            <h2 className="leading-1 font-heading lowercase text-4xl">Featured projects</h2>
+            <Image src="/svg/circled-arrow-down-primary.svg" alt="" width="24" height="24" />
+        </div>
+    )
+}
+
+export default ProjectsTitle;

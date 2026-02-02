@@ -16,11 +16,11 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Intro className="mb-[189px] pt-10" />
+      <Intro className="mb-15 pt-10" />
+      <Projects className="pt-20" />
       <About className="mb-14 pt-20 md:mb-[125px] md:pt-36" />
       <History className="mb-[20px] md:mb-[185px]" />
       <Services className="mb-[80px] pt-20 md:mb-[120px]" />
-      <Projects className="mb-28 pt-20 md:mb-40" />
     </>
   );
 }
