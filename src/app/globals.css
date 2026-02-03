@@ -56,8 +56,8 @@
 /* @media (prefers-color-scheme: dark) { */
 :root {
   --foreground-rgb: #f2ebde;
-  --background-rgb: #171717;
-  --bg-footer: #121212;
+  --background-rgb: #000000;
+  --bg-footer: #000000;
   --bg-secondary: #1c1c1c;
   --max-width: 1440px;
   --header-max-width: 1380px;
@@ -89,6 +89,9 @@ body {
   }
   .text-title-clamp {
     font-size: clamp(9rem, -7.6337rem + 34.6535vw, 13.375rem);
+  }
+  .text-title-2-clamp {
+    font-size: clamp(1.8rem, -3rem + 10vw, 5rem);
   }
 }
 
@@ -195,6 +198,19 @@ body {
   animation: logo-scaled 1.5s steps(14) infinite;
 }
 
+@keyframes logo-main {
+  to { background-position: -2856px 0; }
+}
+
+.logo-main {
+  width: 204px;
+  height: 156px;
+  background-size: 2856px 156px;
+}
+.logo-main:hover {
+  animation: logo-main 1.5s steps(14) infinite;
+}
+
 summary::-webkit-details-marker {
   display: none;
 }
@@ -223,4 +239,13 @@ summary::-webkit-details-marker {
   100% {
     transform: scale(0);
   }
+}
+
+.approach-image {
+  width: 100%;
+  height: 428px;
+  background-image: url("/images/approach-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #171717;
 }
