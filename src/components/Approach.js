@@ -54,7 +54,7 @@ export default function Approach({ className, ...other }) {
       </div>
       <div>
         {phases.map(({ title, description }, index) => (
-          <div className="relative overflow-hidden group grid grid-cols-[1fr_0.66fr] gap-5 py-5 border-t-0.5 border-gray-500 items-center hover:text-black hover:border-black transition-colors">
+          <div key={title} className="relative overflow-hidden group grid grid-cols-[1fr_0.66fr] gap-5 py-5 border-t-0.5 border-gray-500 items-center hover:text-black hover:border-black transition-colors">
             <div className="grid grid-cols-[0.6fr_1fr] gap-4 items-center">
               <div>
                 <span

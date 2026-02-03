@@ -1,4 +1,4 @@
-export default [
+const projects = [
   {
     title: "Opino",
     tags: ["UI Design", "Development", "Interactive animated 3D website"],
@@ -54,3 +54,5 @@ export default [
     slides: [{ type: 'image', name: "Snooper"}],
   },
 ];
+
+export default projects;

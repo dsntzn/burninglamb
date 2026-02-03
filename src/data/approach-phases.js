@@ -1,5 +1,5 @@
 
-export default [
+const phases = [
     { 
         title: "Ideation", 
         description: "/ In this stage, we collaborate, brainstorm and shape creative ideas, ensuring they align with your vision and project goals."
@@ -21,3 +21,4 @@ export default [
         description: "/ After delivery of the finished design files, ongoing support is provided to ensure any adjustments or updates are handled smoothly." 
     },
 ]
+export default phases;

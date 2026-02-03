@@ -1,4 +1,4 @@
-export default [
+const services = [
   "Visual identity",
   "Motion design",
   "Branding",
@@ -6,3 +6,5 @@ export default [
   "Website design",
   "App design",
 ];
+
+export default services;
