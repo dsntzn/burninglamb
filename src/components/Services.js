@@ -13,7 +13,7 @@ export default function Services({ className, ...other }) {
             Services
           </span>
         </h2>
-        <div className="grid grid-cols-2 text-3xl uppercase">
+        <div className="grid grid-cols-2 text-xl xl:text-3xl uppercase">
           {services.map((item) => (
             <span
               key={item}
