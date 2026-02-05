@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="bg-[var(--bg-footer)] pb-20 pt-20 md:pb-8 md:pt-20"
+      className="bg-[var(--bg-footer)]"
     >
       <div className="mx-auto max-w-[var(--max-width)] px-4 md:px-[30px]">
         <div className="md:flex justify-between items-end">
@@ -25,9 +25,9 @@ export default function Footer() {
             {mail}
           </a>
         </div>
-        <div className="flex gap-2 mb-10">
+        <div className="flex flex-wrap gap-2 mb-10">
           <Button
-            className="group flex items-center gap-2 px-[38px] md:px-12"
+            className="group flex items-center gap-2 px-5 md:px-12"
             href="https://t.me/burning_lamb"
             isAlwaysSmall
           >
@@ -51,7 +51,7 @@ export default function Footer() {
             </span>
           </Button>
           <Button
-            className="group flex items-center gap-2 px-[38px] md:px-12"
+            className="group flex items-center gap-2 px-5 md:px-12"
             href="https://www.instagram.com/burning.lamb/"
             isAlwaysSmall
           >
@@ -74,7 +74,7 @@ export default function Footer() {
             </span>
           </Button>
           <Button
-            className="group flex items-center gap-2 px-[38px] md:px-12"
+            className="group flex items-center gap-2 px-5 md:px-12"
             href="https://dribbble.com/burninglamb"
             isAlwaysSmall
           >
@@ -100,11 +100,11 @@ export default function Footer() {
           </div>
           <div className="logo logo-main mb-5" />
         </div>
-        <div className="flex flex-col justify-between md:flex-row md:items-end">
-          <p className="text-sm uppercase leading-1.2 tracking-8 opacity-40 border-t-0.5 border-gray-500 pt-5">
+        <div className="flex flex-col justify-between md:flex-row md:items-end border-t-0.5 border-gray-500 pt-5 mb-5">
+          <p className="text-sm uppercase leading-1.2 tracking-8 opacity-40">
             © {new Date().getFullYear()} Burning lamb — Digital Agency
           </p>
-          <p className="grid grid-cols-2 gap-8 leading-1.2 opacity-40 md:mb-0 border-t-0.5 border-gray-500 pt-5">
+          <p className="grid md:grid-cols-2 md:gap-8 leading-1.2 opacity-40 mb-0">
             <span>Tax ID: 2122164924</span>
             <span>Business ID: 56035136</span>
           </p>
