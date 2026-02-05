@@ -158,12 +158,12 @@ body {
 }
 .slick-prev,
 .slick-next {
-  @apply mt-5 top-full left-full -translate-x-full right-0 size-7 -rotate-90 hover:bg-[var(--bg-secondary)] focus:bg-[var(--bg-secondary)] focus:ring transition-all rounded-full !important;
+  @apply mt-5 top-full left-full -translate-x-full right-0 size-6 -rotate-90 hover:bg-[var(--bg-secondary)] focus:bg-[var(--bg-secondary)] focus:ring transition-all rounded-full !important;
   background: url(/svg/circled-arrow-down-primary.svg) 100% no-repeat !important;
   background-size: contain !important;
 }
 .slick-prev {
-  @apply -ml-10 rotate-90 !important;
+  @apply -ml-16 rotate-90 !important;
 }
 .slick-prev:before,
 .slick-next:before {
