@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="flex gap-2 mb-10">
           <Button
             className="group flex items-center gap-2 px-[38px] md:px-12"
-            href="/"
+            href="https://t.me/burning_lamb"
             isAlwaysSmall
           >
             <Image
@@ -47,12 +47,12 @@ export default function Footer() {
             />{" "}
             <span className="mt-[3px] flex">
               <span className="sr-only">Telegram </span>
-              burning.lamb
+              @Burning_lamb
             </span>
           </Button>
           <Button
             className="group flex items-center gap-2 px-[38px] md:px-12"
-            href="/"
+            href="https://www.instagram.com/burning.lamb/"
             isAlwaysSmall
           >
             <Image
@@ -70,8 +70,30 @@ export default function Footer() {
               className="hidden group-hover:block"
             />{" "}
             <span className="mt-[3px] flex">
-              <span className="sr-only">Instagram </span>
-              Burning.lamb
+              Instagram
+            </span>
+          </Button>
+          <Button
+            className="group flex items-center gap-2 px-[38px] md:px-12"
+            href="https://dribbble.com/burninglamb"
+            isAlwaysSmall
+          >
+            <Image
+              alt=""
+              src="/svg/instagram-outlined.svg"
+              width="12"
+              height="12"
+              className="group-hover:hidden"
+            />
+            <Image
+              alt=""
+              src="/svg/instagram-filled.svg"
+              width="12"
+              height="12"
+              className="hidden group-hover:block"
+            />{" "}
+            <span className="mt-[3px] flex">
+              Dribble
             </span>
           </Button>
         </div>

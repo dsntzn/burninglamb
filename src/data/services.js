@@ -1,10 +1,10 @@
 const services = [
   "Visual identity",
-  "Motion design",
-  "Branding",
-  "Brand direction",
   "Website design",
+  "Branding",
   "App design",
+  "Motion design",
+  "Development",
 ];
 
 export default services;

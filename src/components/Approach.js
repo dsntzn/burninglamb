@@ -49,7 +49,7 @@ export default function Approach({ className, ...other }) {
           </span>
         </h2>
         <p>
-          The design approach will be based on continuous collaboration. Instead of a one-time delivery, we see the process as an ongoing cooperation where ideas evolve through regular feedback and iteration. This ensures that every stage of the design reflects shared understanding, adaptability, and long-term alignment with the project’s goals.
+          The design process is built on continuous collaboration, where ideas develop through regular feedback and iteration. This ongoing approach helps ensure the work stays aligned with your goals at every stage.
         </p>
       </div>
       <div>
