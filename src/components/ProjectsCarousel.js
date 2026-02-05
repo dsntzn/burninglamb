@@ -5,17 +5,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 
-export default function ProjectsCarousel({ slides}) {
+export default function ProjectsCarousel({ slides, project }) {
   const settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
+    // dots: true,
+    arrows: true,
+    // infinite: true,
     // autoplay: true,
     // autoplaySpeed: 3000,
     // hoverPause: true,
     speed: 700,
     // desktop first approach
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -45,29 +45,35 @@ export default function ProjectsCarousel({ slides}) {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {slides.map(({ type, name }, index) => (
-          type === "image" && (
-            <div key={index} className="px-2">
-              <div className="md:hidden">
-                <Image
-                  alt=""
-                  src={`/images/projects/mobile/${name}.png`}
-                  width="343"
-                  height="240"
-                  className="w-full"
+        {slides.map(({ type, name }, index) => {
+          if(["png", 'jpg', 'jpeg'].includes(type)) {
+            return (
+              <div key={index} className="px-2">
+                <div>
+                  <Image
+                    alt=""
+                    src={`/images/projects/${project.toLowerCase()}/${name}.${type}`}
+                    width="400"
+                    height="507"
+                  />
+                </div>
+              </div>
+            )
+          } else if(type === "mp4") {
+            return (
+              <div key={index} className="px-2">
+                <video
+                  src={`/images/projects/${project.toLowerCase()}/${name}.${type}`}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-auto object-cover"
                 />
               </div>
-              <div className="hidden md:block">
-                <Image
-                  alt=""
-                  src={`/images/projects/desktop/${name}.png`}
-                  width="1014"
-                  height="1470"
-                />
-              </div>
-            </div>
-          )
-        ))}
+            )
+          }
+        })}
       </Slider>
     </div>
   );
