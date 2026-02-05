@@ -157,12 +157,12 @@ body {
 }
 .slick-prev,
 .slick-next {
-  @apply h-full opacity-0 hover:bg-[var(--bg-secondary)] hover:opacity-100 focus:bg-[var(--bg-secondary)] focus:opacity-100 focus:ring transition-all rounded-full !important;
-  background: url(/svg/arrow-right-small.svg) 100% no-repeat !important;
+  @apply mt-5 top-full left-full -translate-x-full right-0 size-7 -rotate-90 hover:bg-[var(--bg-secondary)] focus:bg-[var(--bg-secondary)] focus:ring transition-all rounded-full !important;
+  background: url(/svg/circled-arrow-down-primary.svg) 100% no-repeat !important;
   background-size: contain !important;
 }
 .slick-prev {
-  @apply top-0 scale-x-[-1] !important;
+  @apply -ml-10 rotate-90 !important;
 }
 .slick-prev:before,
 .slick-next:before {

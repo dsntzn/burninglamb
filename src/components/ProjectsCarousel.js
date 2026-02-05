@@ -4,9 +4,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import { twMerge } from "tailwind-merge";
 
-export default function ProjectsCarousel({ slides, project }) {
+export default function ProjectsCarousel({ slides }) {
   const settings = {
+    variableWidth: true,
     // dots: true,
     arrows: true,
     // infinite: true,
@@ -45,16 +47,16 @@ export default function ProjectsCarousel({ slides, project }) {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {slides.map(({ type, name }, index) => {
+        {slides.map(({ type, path, width, height }, index) => {
           if(["png", 'jpg', 'jpeg'].includes(type)) {
             return (
               <div key={index} className="px-2">
                 <div>
                   <Image
                     alt=""
-                    src={`/images/projects/${project.toLowerCase()}/${name}.${type}`}
-                    width="400"
-                    height="507"
+                    src={`/${path}`}
+                    width={width}
+                    height={height}
                   />
                 </div>
               </div>
@@ -63,12 +65,12 @@ export default function ProjectsCarousel({ slides, project }) {
             return (
               <div key={index} className="px-2">
                 <video
-                  src={`/images/projects/${project.toLowerCase()}/${name}.${type}`}
+                  src={`/${path}`}
                   autoPlay
                   loop
                   muted
                   playsInline
-                  className="w-full h-auto object-cover"
+                  width={width * 1.78}
                 />
               </div>
             )
