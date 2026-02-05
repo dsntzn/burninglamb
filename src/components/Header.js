@@ -17,7 +17,7 @@ export default function Header({ className, ...other }) {
       {...other}
     >
       <nav className="flex gap-7">
-        <HeaderLink href="#about" className="hidden md:flex">
+        <HeaderLink href="#" className="hidden md:flex">
           About
         </HeaderLink>
         <HeaderLink href="#projects" className="hidden md:flex">
@@ -26,7 +26,7 @@ export default function Header({ className, ...other }) {
         <HeaderLink href="#approach" className="hidden md:flex">
           Approach
         </HeaderLink>
-        <HeaderLink href="#contact" className="hidden md:flex">
+        <HeaderLink href="#services" className="hidden md:flex">
           Services
         </HeaderLink>
       </nav>
