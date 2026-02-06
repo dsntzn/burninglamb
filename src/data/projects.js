@@ -12,35 +12,35 @@ const projects = [
       {
         "type": "png",
         "name": "01",
-        "path": "images/projects/Aroma/01.png",
+        "path": "images/projects/aroma/01.png",
         "width": 1080,
         "height": 995
       },
       {
         "type": "png",
         "name": "02",
-        "path": "images/projects/Aroma/02.png",
+        "path": "images/projects/aroma/02.png",
         "width": 834,
         "height": 995
       },
       {
         "type": "png",
         "name": "03",
-        "path": "images/projects/Aroma/03.png",
+        "path": "images/projects/aroma/03.png",
         "width": 654,
         "height": 995
       },
       {
         "type": "png",
         "name": "04",
-        "path": "images/projects/Aroma/04.png",
+        "path": "images/projects/aroma/04.png",
         "width": 796,
         "height": 995
       },
       {
         "type": "png",
         "name": "05",
-        "path": "images/projects/Aroma/05.png",
+        "path": "images/projects/aroma/05.png",
         "width": 834,
         "height": 995
       }
@@ -60,42 +60,42 @@ const projects = [
       {
         "type": "mp4",
         "name": "01",
-        "path": "images/projects/Nosto/01.mp4",
+        "path": "images/projects/nosto/01.mp4",
         "width": 810,
         "height": 1080
       },
       {
         "type": "png",
         "name": "02",
-        "path": "images/projects/Nosto/02.png",
+        "path": "images/projects/nosto/02.png",
         "width": 1542,
         "height": 1920
       },
       {
         "type": "png",
         "name": "03",
-        "path": "images/projects/Nosto/03.png",
+        "path": "images/projects/nosto/03.png",
         "width": 2049,
         "height": 1920
       },
       {
         "type": "png",
         "name": "04",
-        "path": "images/projects/Nosto/04.png",
+        "path": "images/projects/nosto/04.png",
         "width": 1536,
         "height": 1920
       },
       {
         "type": "mp4",
         "name": "05",
-        "path": "images/projects/Nosto/05.mp4",
+        "path": "images/projects/nosto/05.mp4",
         "width": 864,
         "height": 1080
       },
       {
         "type": "png",
         "name": "06",
-        "path": "images/projects/Nosto/06.png",
+        "path": "images/projects/nosto/06.png",
         "width": 1686,
         "height": 1920
       }
@@ -114,42 +114,42 @@ const projects = [
       {
         "type": "mp4",
         "name": "01",
-        "path": "images/projects/Bandito/01.mp4",
+        "path": "images/projects/bandito/01.mp4",
         "width": 864,
         "height": 1080
       },
       {
         "type": "png",
         "name": "02",
-        "path": "images/projects/Bandito/02.png",
+        "path": "images/projects/bandito/02.png",
         "width": 1462,
         "height": 1920
       },
       {
         "type": "png",
         "name": "03",
-        "path": "images/projects/Bandito/03.png",
+        "path": "images/projects/bandito/03.png",
         "width": 2015,
         "height": 1920
       },
       {
         "type": "png",
         "name": "04",
-        "path": "images/projects/Bandito/04.png",
+        "path": "images/projects/bandito/04.png",
         "width": 2015,
         "height": 1920
       },
       {
         "type": "png",
         "name": "05",
-        "path": "images/projects/Bandito/05.png",
+        "path": "images/projects/bandito/05.png",
         "width": 1536,
         "height": 1920
       },
       {
         "type": "png",
         "name": "06",
-        "path": "images/projects/Bandito/06.png",
+        "path": "images/projects/bandito/06.png",
         "width": 1536,
         "height": 1920
       }

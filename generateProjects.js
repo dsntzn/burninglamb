@@ -75,7 +75,7 @@ async function mergeProjects() {
     const projectPath = path.join(ROOT_DIR, folder.name);
     const slides = await generateSlides(projectPath);
 
-    const project = merged.find(p => p.title === folder.name);
+    const project = merged.find(p => p.title.toLowerCase() === folder.name.toLowerCase());
 
     if (project) {
       project.slides = slides; // 🔥 merge point
