@@ -37,7 +37,7 @@ export default function Project({
       <div className="mb-8">
         <ProjectsCarousel slides={slides} />
       </div>
-      <p className="text-lg font-semibold leading-1.2 w-4/5 md:1/3 lg:w-2/5">
+      <p className="text-lg leading-1.2 w-4/5 md:1/3 lg:w-2/5">
         {description}
       </p>
     </article>

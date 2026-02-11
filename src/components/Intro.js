@@ -14,7 +14,7 @@ export default function Intro({ className, ...other }) {
       </h1>
       <div className="flex items-center justify-between gap-2">
         <div className="logo logo-scaled" />
-        <p className="text-lg w-2/3 md:w-1/3">
+        <p className="text-lg leading-1.2 w-2/3 md:w-1/3">
           Exploring concepts from multiple angles, every project is approached with curiosity and storytelling focusing on creating meaningful experiences and visuals.
         </p>
       </div>

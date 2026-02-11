@@ -18,7 +18,7 @@ export default function Approach({ className, ...other }) {
             Approach
           </span>
         </h2>
-        <p>
+        <p className="text-lg leading-1.2">
           I’m a 26-year-old Designer with a primary focus on Branding, Web Design, 
           UX and Motion Design. My work focuses on creating visually engaging 
           and dynamic visual experiences that bring brands, products, 
