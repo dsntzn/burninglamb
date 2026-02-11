@@ -17,16 +17,16 @@ export default function Header({ className, ...other }) {
       {...other}
     >
       <nav className="flex gap-7">
-        <HeaderLink href="#" className="hidden md:flex">
+        <HeaderLink href="#" className="hidden md:flex text-lg">
           About
         </HeaderLink>
-        <HeaderLink href="#projects" className="hidden md:flex">
+        <HeaderLink href="#projects" className="hidden md:flex text-lg">
           Featured projects
         </HeaderLink>
-        <HeaderLink href="#approach" className="hidden md:flex">
+        <HeaderLink href="#approach" className="hidden md:flex text-lg">
           Approach
         </HeaderLink>
-        <HeaderLink href="#services" className="hidden md:flex">
+        <HeaderLink href="#services" className="hidden md:flex text-lg">
           Services
         </HeaderLink>
       </nav>
@@ -38,7 +38,7 @@ export default function Header({ className, ...other }) {
           height="20"
           className="-scale-x-100"
         />
-        <span className="underline">hi@burninglamb.eu</span>
+        <span className="text-lg underline">hi@burninglamb.eu</span>
       </a>
     </header>
   );

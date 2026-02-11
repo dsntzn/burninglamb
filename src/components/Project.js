@@ -24,7 +24,7 @@ export default function Project({
           >
             .0{index+1}
           </span>
-          <span className="text-base leading-1.2">{title}</span>
+          <span className="text-lg leading-1.2">{title}</span>
         </h3>
         <div className="hidden sm:flex flex-wrap gap-1 justify-end">
           {tags.map((tag) => (
@@ -37,7 +37,7 @@ export default function Project({
       <div className="mb-8">
         <ProjectsCarousel slides={slides} />
       </div>
-      <p className="mb-8 text-base font-semibold leading-1.2 w-4/5 md:1/3 lg:w-2/5">
+      <p className="mb-8 text-lg font-semibold leading-1.2 w-4/5 md:1/3 lg:w-2/5">
         {description}
       </p>
     </article>

@@ -14,8 +14,8 @@ export default function HeaderLink({ children, icon, className, href, hasBlob = 
       }
       {icon}
       <span className="grid overflow-hidden h-4">
-        <span className="text-lg leading-0.8 group-hover:-translate-y-[130%] transition-transform duration-200">{children}</span>
-        <span className="text-lg leading-0.8 group-hover:-translate-y-full transition-transform duration-200" aria-hidden>{children}</span>
+        <span className="leading-0.8 group-hover:-translate-y-[130%] transition-transform duration-200">{children}</span>
+        <span className="leading-0.8 group-hover:-translate-y-full transition-transform duration-200" aria-hidden>{children}</span>
       </span>
     </a>
   );

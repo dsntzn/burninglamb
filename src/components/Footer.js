@@ -93,7 +93,7 @@ export default function Footer() {
               className="hidden group-hover:block"
             />{" "}
             <span className="mt-[3px] flex">
-              Dribble
+              Dribbble
             </span>
           </Button>
         </div>

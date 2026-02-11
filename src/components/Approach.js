@@ -28,7 +28,7 @@ export default function Approach({ className, ...other }) {
         </p>
       </div>
       <div className="approach-image grid items-end pb-14 mb-36">
-        <div className="grid grid-cols-[repeat(3,auto)] md:grid-cols-[repeat(6,auto)] gap-4 items-center justify-between text-base uppercase">
+        <div className="grid grid-cols-[repeat(3,auto)] md:grid-cols-[repeat(6,auto)] gap-4 items-center justify-between text-lg uppercase">
           {services.map((item) => (
             <span
               key={item}
@@ -44,11 +44,11 @@ export default function Approach({ className, ...other }) {
           id="approach-title"
           className="mb-8 flex items-baseline gap-4 md:gap-6"
         >
-          <span className="text-base">
+          <span className="text-lg">
             How will we work together?
           </span>
         </h2>
-        <p>
+        <p className="text-lg">
           The design process is built on continuous collaboration, where ideas develop through regular feedback and iteration. This ongoing approach helps ensure the work stays aligned with your goals at every stage.
         </p>
       </div>
@@ -66,7 +66,7 @@ export default function Approach({ className, ...other }) {
               </div>
               <span className="font-heading lowercase">{title}</span>
             </div>
-            <span className="opacity-60">{description}</span>
+            <span className="opacity-60 text-lg">{description}</span>
             <div className="z-[-1] w-full bg-primary-500 min-h-full absolute translate-y-full group-hover:translate-y-0 transition-transform"></div>
           </div>
         ))}
