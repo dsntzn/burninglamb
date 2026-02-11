@@ -19,7 +19,7 @@ export default function Project({
         <ProjectsTitle className="hidden md:flex py-0 opacity-0 md:mr-10" aria-hidden/>
         <h3 className="flex items-center gap-2 bg-transparent text-3xl font-semibold leading-0.9 md:text-4xl">
           <span
-            className="rounded-full border border-primary-500 px-2 py-1 text-xs font-bold leading-1.3 tracking-2 text-primary-500 transition-colors duration-500 group-open:bg-primary-500 group-open:text-black group-hover:bg-primary-500 group-hover:text-black"
+            className="rounded-full border border-primary-500 px-2 py-1 text-xs font-bold leading-1.3 tracking-2 text-primary-500 transition-colors duration-500"
             aria-hidden
           >
             .0{index+1}
