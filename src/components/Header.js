@@ -21,7 +21,7 @@ export default function Header({ className, ...other }) {
           About
         </HeaderLink>
         <HeaderLink href="#projects" className="hidden md:flex text-lg">
-          Featured projects
+          Featured Projects
         </HeaderLink>
         <HeaderLink href="#approach" className="hidden md:flex text-lg">
           Approach

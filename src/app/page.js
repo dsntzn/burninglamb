@@ -16,8 +16,8 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Intro className="mb-15 pt-10" />
-      <Projects className="my-20" />
+      <Intro className="mb-28 pt-10" />
+      <Projects className="mb-20" />
       <BigButton id="launch-projects-button" title="Launch your project" href="https://dribbble.com/burninglamb" />
       <Approach className="my-20" />
       <Services className="mt-20 mb-56" />

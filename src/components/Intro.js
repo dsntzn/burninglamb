@@ -7,7 +7,7 @@ export default function Intro({ className, ...other }) {
       {...other}
     >
       <h1
-        className="bl-title mb-24 w-full md:mb-2"
+        className="bl-title w-full md:mb-16"
         data-aos="zoom-out"
       >
         <span className="sr-only">Burning Lamb</span>
