@@ -204,8 +204,8 @@ const projects = [
         "type": "png",
         "name": "06",
         "path": "images/projects/moa/06.png",
-        "width": 1080,
-        "height": 1350
+        "width": 1536,
+        "height": 1920
       }
     ]
   },
