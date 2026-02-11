@@ -10,9 +10,10 @@ const Arrow = ({ className }) => (
 )
 
 const BigButton = ({ href = 'mailto:hi@burninglamb.eu', title, className, id }) => (
-  <a id={id} href={href} className={twMerge("group border-y-0.5 border-y-transparent hover:border-y-white transition-colors flex flex-nowrap items-center lg:items-baseline justify-between bg-primary-500 hover:bg-transparent text-black hover:text-white duration-500 p-4 md:p-8 w-full", className)} >
+  <a id={id} href={href} className={twMerge("relative group border-y-0.5 border-y-transparent hover:border-y-white transition-colors flex flex-nowrap items-center lg:items-baseline justify-between text-black hover:text-white duration-500 py-4 md:py-8 w-full", className)} >
     <span className="font-heading leading-0.8 lowercase text-title-2-clamp tracking-2 pt-1 lg:pt-3">{title}</span>
     <Arrow className="scale-50 sm:scale-50 md:scale-75 lg:scale-100 sm:-translate-x-1/2 md:-translate-x-1/4 lg:-translate-x-1/3" />
+    <span className="absolute -inset-x-[30px] inset-y-0 z-[-1] bg-primary-500 group-hover:bg-transparent transition-colors duration-500"></span>
   </a>
 )
 
