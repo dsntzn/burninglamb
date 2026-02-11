@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Intro className="mb-28 pt-10" />
       <Projects className="mb-20" />
-      <BigButton id="view-more-projects" title="View more projects" href="https://dribbble.com/burninglamb" />
+      <BigButton id="view-more-projects" title="View more projects" href="https://dribbble.com/burninglamb" target="_blank" />
       <Approach className="my-20" />
       <Services className="mt-20 mb-56" />
       <BigButton title="Launch your project" className="mb-32" />
