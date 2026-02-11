@@ -61,42 +61,42 @@ const projects = [
         "type": "mp4",
         "name": "01",
         "path": "images/projects/nosto/01.mp4",
-        "width": 810,
+        "width": 864,
         "height": 1080
       },
       {
         "type": "png",
         "name": "02",
         "path": "images/projects/nosto/02.png",
-        "width": 1542,
+        "width": 1686,
         "height": 1920
       },
       {
-        "type": "png",
+        "type": "mp4",
         "name": "03",
-        "path": "images/projects/nosto/03.png",
-        "width": 2049,
-        "height": 1920
+        "path": "images/projects/nosto/03.mp4",
+        "width": 810,
+        "height": 1080
       },
       {
         "type": "png",
         "name": "04",
         "path": "images/projects/nosto/04.png",
-        "width": 1536,
+        "width": 1542,
         "height": 1920
       },
       {
-        "type": "mp4",
+        "type": "png",
         "name": "05",
-        "path": "images/projects/nosto/05.mp4",
-        "width": 864,
-        "height": 1080
+        "path": "images/projects/nosto/05.png",
+        "width": 2049,
+        "height": 1920
       },
       {
         "type": "png",
         "name": "06",
         "path": "images/projects/nosto/06.png",
-        "width": 1686,
+        "width": 1536,
         "height": 1920
       }
     ]
