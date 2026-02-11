@@ -6,6 +6,7 @@
   html {
     font-family: "Darker Grotesque"; /*, system-ui, sans-serif;*/
     font-weight: 500; /* Medium is default weight */
+    scroll-behavior: smooth;
   }
   @font-face {
     font-family: "Dirtyline 36daysoftype 2022";
