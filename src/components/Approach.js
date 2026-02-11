@@ -67,7 +67,7 @@ export default function Approach({ className, ...other }) {
               <span className="font-heading lowercase">{title}</span>
             </div>
             <span className="opacity-60 text-lg">{description}</span>
-            <div className="z-[-1] w-[calc(100%+40px)] bg-primary-500 absolute bottom-0 -translate-x-5 h-0 group-hover:h-full transition-all"></div>
+            <div className="z-[-1] w-[calc(100%+60px)] bg-primary-500 absolute bottom-0 -translate-x-[30px] h-0 group-hover:h-full transition-all"></div>
           </div>
         ))}
       </div>
