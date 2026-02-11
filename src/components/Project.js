@@ -12,7 +12,7 @@ export default function Project({
 }) {
   return (
     <article
-      className="group relative rounded-xl bg-[var(--bg-background-rgb)]"
+      className="group relative rounded-xl bg-[var(--bg-background-rgb)] mb-16 md:mb-32"
       {...other}
     >
       <div className="grid grid-cols-[auto_1fr] md:grid-cols-[auto_1fr_auto] items-center bg-[var(--background-rgb)] gap-3 md:gap-5 lg:gap-10 sticky py-3 top-[100px] md:top-[48.5px] z-[9] border-b-0.5">
@@ -37,7 +37,7 @@ export default function Project({
       <div className="mb-8">
         <ProjectsCarousel slides={slides} />
       </div>
-      <p className="mb-8 text-lg font-semibold leading-1.2 w-4/5 md:1/3 lg:w-2/5">
+      <p className="text-lg font-semibold leading-1.2 w-4/5 md:1/3 lg:w-2/5">
         {description}
       </p>
     </article>
