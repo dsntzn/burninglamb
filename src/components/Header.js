@@ -16,7 +16,7 @@ export default function Header({ className, ...other }) {
       className={twMerge("flex items-center justify-between ", className)}
       {...other}
     >
-      <nav className="flex gap-7">
+      <nav className="flex gap-7 md:gap-10 lg:gap-20">
         <HeaderLink href="#" className="hidden md:flex text-lg">
           About
         </HeaderLink>
