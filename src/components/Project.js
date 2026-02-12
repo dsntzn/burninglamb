@@ -1,3 +1,4 @@
+import { twMerge } from "tailwind-merge";
 import Button from "./Button";
 import ProjectsCarousel from "./ProjectsCarousel";
 import ProjectsTitle from "./ProjectsTitle";
@@ -10,6 +11,16 @@ export default function Project({
   index,
   ...other
 }) {
+
+  const Tags = ({ className }) => (
+    <div className={twMerge("flex-wrap gap-1", className)}>
+      {tags.map((tag) => (
+        <Button key={tag} isAlwaysSmall>
+          {tag}
+        </Button>
+      ))}
+    </div>
+  )
   return (
     <article
       className="group relative rounded-xl bg-[var(--bg-background-rgb)] mb-16 md:mb-32"
@@ -26,18 +37,13 @@ export default function Project({
           </span>
           <span className="text-lg leading-1.2">{title}</span>
         </h3>
-        <div className="hidden sm:flex flex-wrap gap-1 justify-end">
-          {tags.map((tag) => (
-            <Button key={tag} isAlwaysSmall>
-              {tag}
-            </Button>
-          ))}
-        </div>
+        <Tags className="hidden sm:flex justify-end" />
       </div>
-      <div className="mb-8">
+      <div className="mb-4 sm:mb-8">
         <ProjectsCarousel slides={slides} />
       </div>
-      <p className="text-lg leading-1.2 w-4/5 md:1/3 lg:w-2/5">
+      <Tags className="flex sm:hidden mb-4" />
+      <p className="text-lg leading-1.2 w-[70%] lg:w-2/5">
         {description}
       </p>
     </article>

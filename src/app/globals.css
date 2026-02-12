@@ -93,7 +93,7 @@ body {
     font-size: clamp(9rem, -7.6337rem + 34.6535vw, 13.375rem);
   }
   .text-title-2-clamp {
-    font-size: clamp(1.8rem, -3rem + 10vw, 5rem);
+    font-size: clamp(2.625rem, -3rem + 10vw, 5rem);
   }
 }
 
@@ -159,12 +159,12 @@ body {
 }
 .slick-prev,
 .slick-next {
-  @apply mt-5 top-full left-full -translate-x-full right-0 size-6 -rotate-90 hover:bg-[var(--bg-secondary)] focus:bg-[var(--bg-secondary)] focus:ring transition-all rounded-full !important;
+  @apply mt-24 sm:mt-8 top-full left-full -translate-x-full right-0 size-6 -rotate-90 hover:bg-[var(--bg-secondary)] focus:bg-[var(--bg-secondary)] focus:ring transition-all rounded-full !important;
   background: url(/svg/circled-arrow-down-primary.svg) 100% no-repeat !important;
   background-size: contain !important;
 }
 .slick-prev {
-  @apply -ml-16 rotate-90 !important;
+  @apply -ml-14 sm:-ml-16 rotate-90 !important;
 }
 .slick-prev:before,
 .slick-next:before {
@@ -200,6 +200,21 @@ body {
   animation: logo-scaled 1.5s steps(14) infinite;
 }
 
+@keyframes logo-main-mobile {
+  to { background-position: -1428px 0; }
+}
+
+.logo-main-mobile {
+  width: 102px;
+  height: 78px;
+  background-image: url("/svg/icon-lamb-sprite.svg");
+  background-size: 1428px 78px;
+}
+.logo-main-mobile:hover {
+  background-image: url("/svg/icon-lamb-sprite-primary.svg");
+  animation: logo-main-mobile 1.5s steps(14) infinite;
+}
+
 @keyframes logo-main {
   to { background-position: -2856px 0; }
 }
@@ -207,9 +222,11 @@ body {
 .logo-main {
   width: 204px;
   height: 156px;
+  background-image: url("/svg/icon-lamb-sprite.svg");
   background-size: 2856px 156px;
 }
 .logo-main:hover {
+  background-image: url("/svg/icon-lamb-sprite-primary.svg");
   animation: logo-main 1.5s steps(14) infinite;
 }
 
@@ -245,8 +262,7 @@ summary::-webkit-details-marker {
 
 .approach-image {
   width: 100%;
-  height: 428px;
-  background-image: url("/images/approach-bg.jpg");
+  background-image: url("/images/approach-bg-mobile.jpg");
   background-size: cover;
   background-position: center;
   background-color: #171717;

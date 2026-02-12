@@ -27,8 +27,8 @@ export default function Approach({ className, ...other }) {
           only look great but also communicate effectively.
         </p>
       </div>
-      <div className="approach-image grid items-end pb-14 mb-36">
-        <div className="grid grid-cols-[repeat(3,auto)] md:grid-cols-[repeat(6,auto)] gap-4 items-center justify-between text-lg uppercase">
+      <div className="approach-image h-[528px] sm:h-[428px] sm:bg-[url('/images/approach-bg.jpg')] grid items-end pb-14 mb-16 md:mb-36">
+        <div className="grid grid-cols-[repeat(3,auto)] md:grid-cols-[repeat(6,auto)] gap-4 justify-between text-lg uppercase">
           {services.map((item) => (
             <span
               key={item}
@@ -54,8 +54,8 @@ export default function Approach({ className, ...other }) {
       </div>
       <div>
         {phases.map(({ title, description }, index) => (
-          <div key={title} className="relative group grid grid-cols-[1fr_0.66fr] gap-5 py-5 border-t-0.5 border-gray-500 items-center hover:text-black hover:border-black transition-colors">
-            <div className="grid grid-cols-[0.6fr_1fr] gap-4 items-center">
+          <div key={title} className="relative group grid grid-cols-[1fr_0.66fr] gap-5 py-5 pl-2 md:pl-0 border-t-0.5 border-gray-500 md:items-center hover:text-black hover:border-black transition-colors">
+            <div className="grid grid-cols-[0.6fr_1fr] gap-4 md:items-center mt-2 md:mt-0">
               <div>
                 <span
                   className="rounded-full border border-primary-500 px-2 py-1 text-xs font-bold leading-1.3 tracking-2 text-primary-500 group-hover:bg-transparent group-hover:text-black group-hover:border-black"
@@ -64,10 +64,10 @@ export default function Approach({ className, ...other }) {
                   .0{index+1}
                 </span>
               </div>
-              <span className="font-heading lowercase">{title}</span>
+              <span className="font-heading lowercase mt-0.5 md:mt-0">{title}</span>
             </div>
             <span className="opacity-60 text-lg">{description}</span>
-            <div className="z-[-1] w-[calc(100%+60px)] bg-primary-500 absolute bottom-0 -translate-x-[30px] h-0 group-hover:h-full transition-all"></div>
+            <div className="z-[-1] w-full md:w-[calc(100%+60px)] bg-primary-500 absolute bottom-0 md:-translate-x-[30px] h-0 group-hover:h-full transition-all"></div>
           </div>
         ))}
       </div>

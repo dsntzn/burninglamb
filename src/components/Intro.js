@@ -7,12 +7,12 @@ export default function Intro({ className, ...other }) {
       {...other}
     >
       <h1
-        className="bl-title w-full md:mb-16"
+        className="bl-title w-full mb-40 md:mb-16"
         data-aos="zoom-out"
       >
         <span className="sr-only">Burning Lamb</span>
       </h1>
-      <div className="flex items-center justify-between gap-2">
+      <div className="flex sm:items-center justify-between gap-2">
         <div className="logo logo-scaled" />
         <p className="text-lg leading-1.2 w-2/3 md:w-1/3">
           Exploring concepts from multiple angles, every project is approached with curiosity and storytelling focusing on creating meaningful experiences and visuals.
