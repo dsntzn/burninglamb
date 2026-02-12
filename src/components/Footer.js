@@ -30,6 +30,7 @@ export default function Footer() {
             className="group flex items-center gap-2 px-5 md:px-12"
             href="https://t.me/burning_lamb"
             isAlwaysSmall
+            target="_blank"
           >
             <Image
               alt=""
@@ -54,6 +55,7 @@ export default function Footer() {
             className="group flex items-center gap-2 px-5 md:px-12"
             href="https://www.instagram.com/burning.lamb/"
             isAlwaysSmall
+            target="_blank"
           >
             <Image
               alt=""
@@ -77,6 +79,7 @@ export default function Footer() {
             className="group flex items-center gap-2 px-5 md:px-12"
             href="https://dribbble.com/burninglamb"
             isAlwaysSmall
+            target="_blank"
           >
             <Image
               alt=""
