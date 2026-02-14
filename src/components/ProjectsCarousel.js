@@ -3,20 +3,21 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slide from "./ProjectSlide";
-import projects from "@/data/projects";
+import Image from "next/image";
+import { twMerge } from "tailwind-merge";
 
-export default function ProjectsCarousel() {
+export default function ProjectsCarousel({ slides }) {
   const settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
+    variableWidth: true,
+    // dots: true,
+    arrows: true,
+    // infinite: true,
     // autoplay: true,
     // autoplaySpeed: 3000,
     // hoverPause: true,
     speed: 700,
     // desktop first approach
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -46,15 +47,35 @@ export default function ProjectsCarousel() {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {projects.map((project, index) => (
-          <Slide
-            key={project.title}
-            index={index}
-            {...project}
-            data-aos="fade-up"
-            data-aos-delay={index * 50}
-          />
-        ))}
+        {slides.map(({ type, path, width, height }, index) => {
+          if(["png", 'jpg', 'jpeg'].includes(type)) {
+            return (
+              <div key={index} className="px-2">
+                <div>
+                  <Image
+                    alt=""
+                    src={`/${path}`}
+                    width={width}
+                    height={height}
+                  />
+                </div>
+              </div>
+            )
+          } else if(type === "mp4") {
+            return (
+              <div key={index} className="px-2">
+                <video
+                  src={`/${path}`}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  width={width * 1.78}
+                />
+              </div>
+            )
+          }
+        })}
       </Slider>
     </div>
   );

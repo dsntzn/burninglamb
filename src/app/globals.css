@@ -6,6 +6,7 @@
   html {
     font-family: "Darker Grotesque"; /*, system-ui, sans-serif;*/
     font-weight: 500; /* Medium is default weight */
+    scroll-behavior: smooth;
   }
   @font-face {
     font-family: "Dirtyline 36daysoftype 2022";
@@ -56,8 +57,8 @@
 /* @media (prefers-color-scheme: dark) { */
 :root {
   --foreground-rgb: #f2ebde;
-  --background-rgb: #171717;
-  --bg-footer: #121212;
+  --background-rgb: #000000;
+  --bg-footer: #000000;
   --bg-secondary: #1c1c1c;
   --max-width: 1440px;
   --header-max-width: 1380px;
@@ -67,6 +68,7 @@
 html {
   width: 100vw;
   overflow-x: hidden;
+  scroll-padding-top: 70px;
 }
 
 body {
@@ -89,6 +91,9 @@ body {
   }
   .text-title-clamp {
     font-size: clamp(9rem, -7.6337rem + 34.6535vw, 13.375rem);
+  }
+  .text-title-2-clamp {
+    font-size: clamp(2.625rem, -3rem + 10vw, 5rem);
   }
 }
 
@@ -154,12 +159,12 @@ body {
 }
 .slick-prev,
 .slick-next {
-  @apply h-full opacity-0 hover:bg-[var(--bg-secondary)] hover:opacity-100 focus:bg-[var(--bg-secondary)] focus:opacity-100 focus:ring transition-all rounded-full !important;
-  background: url(/svg/arrow-right-small.svg) 100% no-repeat !important;
+  @apply mt-24 sm:mt-8 top-full left-full -translate-x-full right-0 size-6 -rotate-90 hover:bg-[var(--bg-secondary)] focus:bg-[var(--bg-secondary)] focus:ring transition-all rounded-full !important;
+  background: url(/svg/circled-arrow-down-primary.svg) 100% no-repeat !important;
   background-size: contain !important;
 }
 .slick-prev {
-  @apply top-0 scale-x-[-1] !important;
+  @apply -ml-14 sm:-ml-16 rotate-90 !important;
 }
 .slick-prev:before,
 .slick-next:before {
@@ -177,64 +182,52 @@ body {
   background-image: url("/svg/icon-lamb-sprite.svg");
   background-size: 476px 26px;
 }
-
 .logo:hover {
   background-image: url("/svg/icon-lamb-sprite-primary.svg");
   animation: logo 1.5s steps(14) infinite;
 }
 
-@keyframes icon-surface {
-  to { background-position: -350px; }
-}
-.icon-surface {
-  display: flex;
-  width: 35px;
-  height: 34px;
-  background-image: url("/svg/icon-surface-sprite.svg");
-  background-size: 350px 34px;
-}
-.icon-surface:hover {
-  animation: icon-surface 1s steps(10) infinite;
+@keyframes logo-scaled {
+  to { background-position: -952px 0; }
 }
 
-@keyframes icon-cube {
-  to { background-position: -320px; }
+.logo-scaled {
+  width: 68px;
+  height: 52px;
+  background-size: 952px 52px;
 }
-.icon-cube {
-  display: flex; 
-  width: 32px;
-  height: 34px;
-  background-image: url("/svg/icon-cube-sprite.svg");
-  background-size: 320px 34px;
+.logo-scaled:hover {
+  animation: logo-scaled 1.5s steps(14) infinite;
 }
-.icon-cube:hover {
-  animation: icon-cube 1s steps(10) infinite;
+
+@keyframes logo-main-mobile {
+  to { background-position: -1428px 0; }
 }
-@keyframes icon-globe {
-  to { background-position: -320px; }
+
+.logo-main-mobile {
+  width: 102px;
+  height: 78px;
+  background-image: url("/svg/icon-lamb-sprite.svg");
+  background-size: 1428px 78px;
 }
-.icon-globe {
-  display: flex; 
-  width: 32px;
-  height: 34px;
-  background-image: url("/svg/icon-globe-sprite.svg");
-  background-size: 320px 34px;
+.logo-main-mobile:hover {
+  background-image: url("/svg/icon-lamb-sprite-primary.svg");
+  animation: logo-main-mobile 1.5s steps(14) infinite;
 }
-.icon-globe:hover {
-  animation: icon-globe 1s steps(10) infinite;
+
+@keyframes logo-main {
+  to { background-position: -2856px 0; }
 }
-@keyframes icon-bezier {
-  to { background-position: -320px; }
+
+.logo-main {
+  width: 204px;
+  height: 156px;
+  background-image: url("/svg/icon-lamb-sprite.svg");
+  background-size: 2856px 156px;
 }
-.icon-bezier {
-  display: flex; 
-  width: 32px;
-  height: 34px;
-  background-image: url("/svg/icon-bezier-sprite.svg");
-  background-size: 320px 34px;
-}
-.icon-bezier:hover {
-  animation: icon-bezier 1s steps(10) infinite;
+.logo-main:hover {
+  background-image: url("/svg/icon-lamb-sprite-primary.svg");
+  animation: logo-main 1.5s steps(14) infinite;
 }
 
 summary::-webkit-details-marker {
@@ -265,4 +258,12 @@ summary::-webkit-details-marker {
   100% {
     transform: scale(0);
   }
+}
+
+.approach-image {
+  width: 100%;
+  background-image: url("/images/approach-bg-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #171717;
 }

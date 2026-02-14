@@ -1,7 +1,4 @@
-import GridClaim from "./GridClaim";
-import AnimatedIcons from "./AnimatedIcons";
 import { twMerge } from "tailwind-merge";
-import Image from "next/image";
 
 export default function Intro({ className, ...other }) {
   return (
@@ -10,34 +7,17 @@ export default function Intro({ className, ...other }) {
       {...other}
     >
       <h1
-        className="bl-title mb-24 w-full md:mb-2"
+        className="bl-title w-full mb-40 md:mb-16"
         data-aos="zoom-out"
-        data-aos-duration="300"
-        data-aos-delay="1000"
       >
-        <span className="sr-only">We are Burning lamb</span>
+        <span className="sr-only">Burning Lamb</span>
       </h1>
-      <div className="flex items-end justify-between gap-2">
-        <AnimatedIcons
-          data-aos="fade-right"
-          data-aos-anchor="#grid"
-          data-aos-duration="300"
-          data-aos-delay="1000"
-        />
-        <GridClaim
-          data-aos="fade-left"
-          data-aos-duration="300"
-          data-aos-delay="1000"
-          id="grid"
-        />
+      <div className="flex sm:items-center justify-between gap-2">
+        <div className="logo logo-scaled" />
+        <p className="text-lg leading-1.2 w-2/3 md:w-1/3">
+          Exploring concepts from multiple angles, every project is approached with curiosity and storytelling focusing on creating meaningful experiences and visuals.
+        </p>
       </div>
-      <Image
-        alt=""
-        src="/images/lamb.gif"
-        className="absolute left-1/2 top-40 z-[-1] -translate-x-1/2 scale-[2] md:top-20 md:scale-125 lg:top-0 lg:scale-100"
-        width="1440"
-        height="853"
-      />
     </section>
   );
 }

@@ -1,56 +1,274 @@
-export default [
+const projects = [
   {
-    title: "Opino",
-    tags: ["UI Design", "Development", "Interactive animated 3D website"],
-    description: `From interactive data visualizations to dynamic representations of the software in action, the website seamlessly blended aesthetics with functionality. The project's success was evident in increased website traffic, extended user dwell time, and positive feedback from clients and prospects alike. Opino's 3D website became a powerful tool in conveying the company's commitment to technological excellence and user-centric design, contributing to its overall brand authority in the SaaS industry.`,
-    image: "Opino",
+    "title": "Aroma",
+    "tags": [
+      "Logo",
+      "Brand identity",
+      "Packaging design",
+      "Brand assets"
+    ],
+    "description": "A minimalist skincare identity defined by contrast, restraint, and editorial sensibility, positioning skincare as an intimate, timeless ritual rather than a loud, trend-driven product.",
+    "slides": [
+      {
+        "type": "png",
+        "name": "01",
+        "path": "images/projects/aroma/01.png",
+        "width": 1080,
+        "height": 995
+      },
+      {
+        "type": "png",
+        "name": "02",
+        "path": "images/projects/aroma/02.png",
+        "width": 834,
+        "height": 995
+      },
+      {
+        "type": "png",
+        "name": "03",
+        "path": "images/projects/aroma/03.png",
+        "width": 654,
+        "height": 995
+      },
+      {
+        "type": "png",
+        "name": "04",
+        "path": "images/projects/aroma/04.png",
+        "width": 796,
+        "height": 995
+      },
+      {
+        "type": "png",
+        "name": "05",
+        "path": "images/projects/aroma/05.png",
+        "width": 834,
+        "height": 995
+      }
+    ]
   },
   {
-    title: "Optisia",
-    tags: ["AR visualisation", "3D models", "video campaign", "VFX effects"],
-    description: `The combined efforts of the AR Try-On Glasses App and the video campaign resulted in a substantial increase in app downloads, customer engagement, and ultimately, online sales. Optisia successfully differentiated itself in the eyewear market, offering a unique and enjoyable shopping experience that resonated with tech-savvy consumers. It highlighted real users experiencing the joy of discovering their perfect pair of glasses through the app.`,
-    image: "Optisia",
+    "title": "Nosto",
+    "tags": [
+      "Logo",
+      "Brand identity",
+      "Motion design",
+      "UI design",
+      "Design system"
+    ],
+    "description": "The identity pairs bold, utilitarian typography with raw, street-driven imagery, while the website translates the brand into a seamless digital marketplace. By treating resale as culture rather than commerce, the platform feels immersive, credible, and current, standing apart from traditional secondhand marketplaces through its editorial tone and experience-led design.",
+    "slides": [
+      {
+        "type": "mp4",
+        "name": "01",
+        "path": "images/projects/nosto/01.mp4",
+        "width": 864,
+        "height": 1080
+      },
+      {
+        "type": "png",
+        "name": "02",
+        "path": "images/projects/nosto/02.png",
+        "width": 1686,
+        "height": 1920
+      },
+      {
+        "type": "mp4",
+        "name": "03",
+        "path": "images/projects/nosto/03.mp4",
+        "width": 810,
+        "height": 1080
+      },
+      {
+        "type": "png",
+        "name": "04",
+        "path": "images/projects/nosto/04.png",
+        "width": 1542,
+        "height": 1920
+      },
+      {
+        "type": "png",
+        "name": "05",
+        "path": "images/projects/nosto/05.png",
+        "width": 2049,
+        "height": 1920
+      },
+      {
+        "type": "png",
+        "name": "06",
+        "path": "images/projects/nosto/06.png",
+        "width": 1536,
+        "height": 1920
+      }
+    ]
   },
   {
-    title: "Aroma",
-    tags: ["Logo", "Brand indentity", "UI web design", "Brand assets"],
-    description: `The launch of Aroma's exclusive cosmetics line accompanied by the new brand identity garnered significant attention. The sophisticated visuals resonated with the brand's target audience, positioning Aroma as a symbol of refined beauty and luxury. The cohesive brand identity contributed to increased brand recognition, customer loyalty, and a successful market entry for Aroma in the competitive cosmetics landscape. `,
-    image: "Aroma",
+    "title": "Bandito",
+    "tags": [
+      "Logo",
+      "Brand identity",
+      "Brand direction",
+      "Brand assets"
+    ],
+    "description": "A playful café identity built around bold and pixel-inspired graphics, paired with an on brand playful tone of voice. The visuals feel handcrafted and unexpected, turning everyday café touchpoints into a characterful, memorable brand experience.",
+    "slides": [
+      {
+        "type": "mp4",
+        "name": "01",
+        "path": "images/projects/bandito/01.mp4",
+        "width": 864,
+        "height": 1080
+      },
+      {
+        "type": "png",
+        "name": "02",
+        "path": "images/projects/bandito/02.png",
+        "width": 1462,
+        "height": 1920
+      },
+      {
+        "type": "png",
+        "name": "03",
+        "path": "images/projects/bandito/03.png",
+        "width": 2015,
+        "height": 1920
+      },
+      {
+        "type": "png",
+        "name": "04",
+        "path": "images/projects/bandito/04.png",
+        "width": 2015,
+        "height": 1920
+      },
+      {
+        "type": "png",
+        "name": "05",
+        "path": "images/projects/bandito/05.png",
+        "width": 1536,
+        "height": 1920
+      },
+      {
+        "type": "png",
+        "name": "06",
+        "path": "images/projects/bandito/06.png",
+        "width": 1536,
+        "height": 1920
+      }
+    ]
   },
   {
-    title: "KONTRAFAKT - INÍ",
-    tags: ["3D design", "Custom models", "VFX effects", "Composing"],
-    description: `Throughout the video clip, dynamic VFX effects were applied to enhance the interaction between the artist and the 3D character. The 3D modeling process involved crafting a futuristic robotic character that synchronized with the theme of the music. Precision and attention to detail were crucial to ensure a lifelike integration onto the live performer. The VFX team then employed advanced techniques to seamlessly merge the 3D modeled robotic figure with the artist in the video.`,
-    image: "Ego",
+    "title": "moa",
+    "tags": [
+      "Logo",
+      "Brand identity",
+      "Style guide",
+      "Brand assets"
+    ],
+    "description": "A sharp yet smooth visual language, modern and elegant, designed to balance architecture with nature. The system balances clarity and character, translating the brand seamlessly across print and digital while conveying a sense of structure, confidence, and contemporary urban craft.",
+    "slides": [
+      {
+        "type": "png",
+        "name": "01",
+        "path": "images/projects/moa/01.png",
+        "width": 1462,
+        "height": 1920
+      },
+      {
+        "type": "png",
+        "name": "02",
+        "path": "images/projects/moa/02.png",
+        "width": 2015,
+        "height": 1920
+      },
+      {
+        "type": "png",
+        "name": "03",
+        "path": "images/projects/moa/03.png",
+        "width": 1462,
+        "height": 1920
+      },
+      {
+        "type": "png",
+        "name": "04",
+        "path": "images/projects/moa/04.png",
+        "width": 2015,
+        "height": 1920
+      },
+      {
+        "type": "mp4",
+        "name": "05",
+        "path": "images/projects/moa/05.mp4",
+        "width": 864,
+        "height": 1080
+      },
+      {
+        "type": "png",
+        "name": "06",
+        "path": "images/projects/moa/06.png",
+        "width": 1536,
+        "height": 1920
+      }
+    ]
   },
   {
-    title: "Hut",
-    tags: ["Brand indentity", "Logo", "Merch", "Style guide", "Tone of voice"],
-    description: `In collaboration with Hut, a serene cafe aiming to offer people a tranquil escape, our design team embarked on a project to create a cohesive brand and visual identity. The goal was to evoke a sense of relaxation and serenity throughout every touchpoint of the cafe experience. Our newly created visual identity extended to every aspect of the cafe, from interior decor to menu design. The cohesive visual identity successfully communicated Hut’s promise of a tranquil retreat in the midst of a busy city life.`,
-    image: "Hut",
-  },
-  {
-    title: "Eden dynamics",
-    tags: ["Brand indentity", "Logo", "Business Cards"],
-    description: `The new logo and business cards not only modernized their visual identity but also served as powerful tools in networking and leaving a lasting impression within the architecture and design community. The business cards were designed as a tangible extension of the brand, featuring a clean and minimalist layout with the newly crafted logo taking center stage.`,
-    image: "ED",
-  },
-  {
-    title: "Spade Group",
-    tags: ["Defined design system", "UI design", "Motion design"],
-    description: `The landing page seamlessly blended aesthetic appeal with functionality, featuring an engaging and user-friendly design. Dynamic motion graphics were strategically incorporated to create a visually compelling experience, capturing the energy and vibrancy inherent in the music industry. Combining sleek design and dynamic motion elements not only increased user engagement but also contributed to a positive perception of Spade Group as a cutting-edge player in virtual marketing for the music industry.`,
-    image: "Spade",
-  },
-  {
-    title: "HazeHeaven",
-    tags: ["Logo", "Brand indentity", "Packaging design", "Merch"],
-    description: `Clean lines, minimalist graphics, and on-brand color schemes were employed to create packaging that not only protected the garments but also enhanced the anticipation and excitement of receiving a HazeHeaven product. The combined impact of the brand design and packaging revitalized HazeHeaven's image, helping the brand carve a niche in the competitive fashion industry.`,
-    image: "Haze",
-  },
-  {
-    title: "Snooper",
-    tags: ["Logo", "UI design", "UX research", "Motion design"],
-    description: `This project aimed to provide users with a seamless and insightful tool to monitor and analyze their online presence across various social platforms. The collaborative efforts resulted in a website that empowered users to take control of their social media presence, offering valuable analytics in a user-friendly format. The cohesive branding, highlighted by the distinctive logo, positioned Snooper as a reliable and innovative solution in the realm of social media tracking.`,
-    image: "Snooper",
-  },
+    "title": "mocha",
+    "tags": [
+      "Logo",
+      "Brand identity",
+      "Packaging design",
+      "Brand assets"
+    ],
+    "description": "A playful tea identity rooted in bold botanicals and rich, earthy color palettes. Illustrated florals and tactile packaging turn each blend into a small visual ritual, making tea feel expressive, joyful, and anything but ordinary.",
+    "slides": [
+      {
+        "type": "png",
+        "name": "01",
+        "path": "images/projects/mocha/01.png",
+        "width": 2015,
+        "height": 1920
+      },
+      {
+        "type": "png",
+        "name": "02",
+        "path": "images/projects/mocha/02.png",
+        "width": 1462,
+        "height": 1920
+      },
+      {
+        "type": "mp4",
+        "name": "03",
+        "path": "images/projects/mocha/03.mp4",
+        "width": 864,
+        "height": 1080
+      },
+      {
+        "type": "png",
+        "name": "04",
+        "path": "images/projects/mocha/04.png",
+        "width": 1926,
+        "height": 1920
+      },
+      {
+        "type": "png",
+        "name": "05",
+        "path": "images/projects/mocha/05.png",
+        "width": 1926,
+        "height": 1920
+      },
+      {
+        "type": "mp4",
+        "name": "06",
+        "path": "images/projects/mocha/06.mp4",
+        "width": 864,
+        "height": 1080
+      },
+      {
+        "type": "png",
+        "name": "07",
+        "path": "images/projects/mocha/07.png",
+        "width": 1810,
+        "height": 1920
+      }
+    ]
+  }
 ];
+export default projects;

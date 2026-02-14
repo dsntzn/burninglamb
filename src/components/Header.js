@@ -13,46 +13,34 @@ export default function Header({ className, ...other }) {
   }
   return (
     <header
-      className={twMerge(" flex items-center justify-between ", className)}
+      className={twMerge("flex items-center justify-between ", className)}
       {...other}
     >
-      <button onClick={handleClick}>
-        <div className="logo" />
-      </button>
-      <nav className="flex gap-7 lowercase">
-        <HeaderLink href="#about" className="hidden md:flex">
+      <nav className="flex gap-7 md:gap-10 lg:gap-20">
+        <HeaderLink href="#" className="hidden md:flex text-lg">
           About
         </HeaderLink>
-        <HeaderLink href="#services" className="hidden md:flex">
+        <HeaderLink href="#projects" className="hidden md:flex text-lg">
+          Featured Projects
+        </HeaderLink>
+        <HeaderLink href="#approach" className="hidden md:flex text-lg">
+          Approach
+        </HeaderLink>
+        <HeaderLink href="#services" className="hidden md:flex text-lg">
           Services
         </HeaderLink>
-        <HeaderLink href="#projects" className="hidden md:flex">
-          Featured projects
-        </HeaderLink>
-        <HeaderLink
-          href="#contact"
-          icon={
-            <>
-              <Image
-                alt=""
-                src="/svg/arrow-left-down.svg"
-                width="20"
-                height="20"
-                className="group-hover:hidden"
-              />
-              <Image
-                alt=""
-                src="/svg/arrow-left-down-primary.svg"
-                width="20"
-                height="20"
-                className="hidden group-hover:block"
-              />
-            </>
-          }
-        >
-          Contact
-        </HeaderLink>
+        <div className="logo" />
       </nav>
+      <a href="mailto:hi@burninglamb.eu" className="flex items-center gap-1 hover:text-primary-500 transition-colors" >
+        <Image
+          alt=""
+          src="/svg/arrow-left-down-primary.svg"
+          width="20"
+          height="20"
+          className="-scale-x-100"
+        />
+        <span className="text-lg underline">hi@burninglamb.eu</span>
+      </a>
     </header>
   );
 }
