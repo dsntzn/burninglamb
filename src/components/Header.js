@@ -29,7 +29,7 @@ export default function Header({ className, ...other }) {
         <HeaderLink href="#services" className="hidden md:flex text-lg">
           Services
         </HeaderLink>
-        <div className="logo" />
+        <div className="logo md:hidden" />
       </nav>
       <a href="mailto:hi@burninglamb.eu" className="flex items-center gap-1 hover:text-primary-500 transition-colors" >
         <Image
